@@ -1,0 +1,1 @@
+crud-command - artisan console command for fast creating crud resources for myself.

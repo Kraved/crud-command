@@ -1,0 +1,26 @@
+{
+  "name": "kraved/crud-command",
+  "description": "crud-command - artisan console command for fast creating crud resources for myself.",
+  "license": "MIT",
+  "version": "1.0",
+  "authors": [{
+    "name": "Kraved",
+    "email": "varkinfo@gmail.com",
+    "role": "Developer"
+  }],
+  "require": {
+    "php": ">=7.1"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kraved\\CrudCommand\\CrudCommandServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Kraved\\CrudCommand\\": "src/"
+    }
+  }
+}
