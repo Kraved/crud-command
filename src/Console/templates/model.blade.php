@@ -22,7 +22,7 @@ class {{ $className }} extends Model
 @if($active)
     public function scopeActive()
     {
-    return $this->where('active', 1);
+        return $this->where('active', 1);
     }
 @endif
 }

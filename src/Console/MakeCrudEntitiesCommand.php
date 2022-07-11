@@ -185,22 +185,21 @@ class MakeCrudEntitiesCommand extends Command
 
     public function createViews()
     {
-
         $path = 'resources/views/' . lcfirst($this->className) . 's/index.blade.php';
         $this->makeDirectory($path);
-        $this->filesystem->put($path, "<?php \n dd($" . lcfirst($this->className) . 's);');
+        $this->filesystem->put($path, "<?php \n dump($" . lcfirst($this->className) . 's);');
         $this->info('Файл ' . $path . ' создан');
 
         $path = 'resources/views/' . lcfirst($this->className) . 's/create.blade.php';
-        $this->filesystem->put($path, "<?php \n dd($" .lcfirst($this->className) . ');');
+        $this->filesystem->put($path, "<?php \n dump($" .lcfirst($this->className) . ');');
         $this->info('Файл ' . $path . ' создан');
 
         $path = 'resources/views/' . lcfirst($this->className) . 's/edit.blade.php';
-        $this->filesystem->put($path, "<?php \n dd($" . lcfirst($this->className) . ');');
+        $this->filesystem->put($path, "<?php \n dump($" . lcfirst($this->className) . ');');
         $this->info('Файл ' . $path . ' создан');
 
         $path = 'resources/views/' . lcfirst($this->className) . 's/show.blade.php';
-        $this->filesystem->put($path, "<?php \n dd($" . lcfirst($this->className) . ');');
+        $this->filesystem->put($path, "<?php \n dump($" . lcfirst($this->className) . ');');
         $this->info('Файл ' . $path . ' создан');
     }
 
